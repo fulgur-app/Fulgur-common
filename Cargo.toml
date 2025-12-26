@@ -1,0 +1,11 @@
+[package]
+name = "fulgur-common"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+license-file = "LICENSE"
+readme = "README.md"
+
+[dependencies]
+# Serialization
+serde = { version = "1.0.228", features = ["derive"] }
