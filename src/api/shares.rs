@@ -13,7 +13,7 @@ pub struct ShareFileResponse {
     pub expiration_date: String,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SharedFileResponse {
     pub id: String,
     pub source_device_id: String,
