@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 pub struct ShareFilePayload {
     pub content: String,
     pub file_name: String,
-    pub device_ids: Vec<String>,
+    pub device_id: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
