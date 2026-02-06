@@ -5,6 +5,8 @@ pub struct ShareFilePayload {
     pub content: String,
     pub file_name: String,
     pub device_id: String,
+    #[serde(skip_serializing_if = "Option::is_none", default)]
+    pub deduplication_hash: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
