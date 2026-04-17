@@ -9,3 +9,10 @@ pub struct DeviceResponse {
     pub created_at: String,
     pub expires_at: String,
 }
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct DevicesResponse {
+    pub devices: Vec<DeviceResponse>,
+    #[serde(default)]
+    pub max_file_size_bytes: Option<u64>,
+}

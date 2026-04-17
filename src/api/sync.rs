@@ -11,6 +11,8 @@ pub struct ErrorResponse {
 pub struct BeginResponse {
     pub device_name: String,
     pub shares: Vec<shares::SharedFileResponse>,
+    #[serde(default)]
+    pub max_file_size_bytes: Option<u64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
