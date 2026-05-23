@@ -16,6 +16,14 @@ pub struct BeginResponse {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub struct BeginV2Response {
+    pub device_name: String,
+    pub share_ids: Vec<String>,
+    #[serde(default)]
+    pub max_file_size_bytes: Option<u64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct PingResponse {
     pub ok: bool,
 }
