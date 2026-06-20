@@ -21,6 +21,8 @@ pub struct BeginV2Response {
     pub share_ids: Vec<String>,
     #[serde(default)]
     pub max_file_size_bytes: Option<u64>,
+    #[serde(default)]
+    pub min_fulgur_version: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
