@@ -24,4 +24,6 @@ pub struct SharedFileResponse {
     pub content: String, // Encrypted content (base64)
     pub created_at: String,
     pub expires_at: String,
+    #[serde(default)]
+    pub source_device_name: Option<String>,
 }
