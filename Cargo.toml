@@ -7,4 +7,4 @@ readme = "README.md"
 
 [dependencies]
 # Serialization
-serde = { version = "1.0.228", features = ["derive"] }
+serde = { version = "1.0.229", features = ["derive"] }
